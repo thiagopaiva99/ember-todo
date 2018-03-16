@@ -1,23 +1,18 @@
-<h2 class="text-center">Ember To Do List</h2>
-<br>
+{{navbar-component}}
+
+{{liquid-outlet}}
+
 <div class="container">
-  <form>
-    <div class="form-group">
-      Due: {{input value=deadline}}
-      Task description: {{input value=description}}
-      <button {{action (route-action 'save' description deadline)}}class="btn btn-default" type="submit">
-        Add
-      </button>
+    <div class="btn-group">
+        <a class="btn btn-success">{{#link-to 'new'}}New{{/link-to}}</a>
+        <button class="btn btn-primary" {{action 'showAll'}}>All</button>
+        <button class="btn btn-primary" {{action 'showCompleted'}}>Complete</button>
+        <button class="btn btn-primary" {{action 'showIncomplete'}}>Incomplete</button>
     </div>
-  </form>
 </div>
+
 <br>
-<div class="container">
-  <button class="btn btn-primary" {{action 'showAll'}}>All</button>
-  <button class="btn btn-primary" {{action 'showCompleted'}}>Complete</button>
-  <button class="btn btn-primary" {{action 'showIncomplete'}}>Incomplete</button>
-</div>
-<br>
+
 <div class="container">
   <div class="list-group">
     {{#each completed as |task|}}
@@ -37,11 +32,4 @@
   </div>
 </div>
 
-<div class="container row">
-  <div class="col-md-6">
-    {{liquid-outlet}}
-  </div>
-  <div class="col-md-6">
-    <img class="zoey" src="../imgs/austin-zoey.png">
-  </div>
-</div>
+<br><br>

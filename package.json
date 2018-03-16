@@ -1,22 +1,23 @@
 {
-  "name": "to-do-list",
-  "version": "0.0.0",
-  "description": "Small description for to-do-list goes here",
+  "name": "ember-todo",
+  "version": "0.0.1",
+  "description": "",
   "private": true,
   "directories": {
     "doc": "doc",
     "test": "tests"
   },
   "scripts": {
-    "build": "ember build",
-    "start": "ember server",
-    "test": "ember test"
+    "build": "./node_modules/.bin/ember build",
+    "start": "./node_modules/.bin/ember server --port=5000",
+    "test": "./node_modules/.bin/ember test",
+    "bower-install": "./node_modules/.bin/bower install"
   },
   "repository": "",
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "author": "Thiago Galvani",
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.2",

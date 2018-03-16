@@ -3,10 +3,11 @@ export default function(){
     this.fromRoute('index'),
     this.toRoute('edit'),
     this.use('crossFade', {duration: 2000})
-  );
+  )
+  
   this.transition(
-    this.fromRoute('edit'),
-    this.toRoute('index'),
-    this.use('toUp', {duration: 2000})
-  );
+    this.fromRoute('index'),
+    this.toRoute('new'),
+    this.use('crossFade', {duration: 1000})
+  )
 }
