@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Ember To Do List :memo:
 
 This is a simple CRUD Ember application that uses:
@@ -60,3 +61,7 @@ Specify what it takes to deploy your app.
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
 
 If you have any comments, questions, or concerns you can reach out to me :unicorn: @stefriera in the twitterverse or email or file an issue but the other two would probably be faster.
+=======
+# ember-todo
+simple todo app made with emberjs
+>>>>>>> ca7276f99e6e299fe3161700d51fc9a06ea1afe7
